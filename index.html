@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>لوحة تحكم المشرف | منصة مكني</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Tajawal:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="admin-dashboard.css" />
+  </head>
+  <body>
+    <div class="dashboard-container">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="sidebar-header">
+          <div class="admin-profile">
+            <img
+              src="https://i.pravatar.cc/150?img=11"
+              alt="صورة المشرف"
+              class="admin-avatar"
+            />
+            <h3 class="admin-name">أحمد الأحمد</h3>
+            <p class="admin-role">مشرف النظام</p>
+          </div>
+        </div>
+        <nav class="sidebar-nav">
+          <ul>
+            <li>
+              <a href="#dashboard-section"
+                ><i class="fas fa-tachometer-alt"></i> لوحة التحكم</a
+              >
+            </li>
+            <li>
+              <a href="#analytics-section"
+                ><i class="fas fa-chart-line"></i> التحليلات</a
+              >
+            </li>
+            <li>
+              <a href="#user-section"
+                ><i class="fas fa-users"></i> إدارة المستخدمين</a
+              >
+            </li>
+            <li>
+              <a href="#instructor-section"
+                ><i class="fas fa-chalkboard-teacher"></i> إدارة المدربين</a
+              >
+            </li>
+            <li>
+              <a href="#course-section"
+                ><i class="fas fa-book"></i> إدارة الدورات</a
+              >
+            </li>
+            <li>
+              <a href="#settings-section"
+                ><i class="fas fa-cog"></i> الإعدادات</a
+              >
+            </li>
+            <li class="logout">
+              <a href="#"><i class="fas fa-sign-out-alt"></i> تسجيل الخروج</a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="main-content">
+        <div class="top-header">
+          <div class="search-box">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="البحث..." />
+          </div>
+          <div class="header-actions">
+            <div class="notification">
+              <i class="fas fa-bell"></i>
+              <span class="badge">3</span>
+            </div>
+            <div class="messages">
+              <i class="fas fa-envelope"></i>
+              <span class="badge">5</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dashboard Section -->
+        <section id="dashboard-section">
+          <h1 class="page-title">لوحة التحكم</h1>
+
+          <div class="stats-container">
+            <div class="stat-card">
+              <div
+                class="stat-icon"
+                style="background-color: rgba(23, 0, 255, 0.1); color: #1700ff"
+              >
+                <i class="fas fa-users"></i>
+              </div>
+              <div class="stat-details">
+                <h3>إجمالي المستخدمين</h3>
+                <div class="stat-value">1,250</div>
+                <div class="stat-change positive">
+                  <i class="fas fa-arrow-up"></i>
+                  <span>15% منذ الشهر الماضي</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="stat-card">
+              <div
+                class="stat-icon"
+                style="background-color: rgba(0, 196, 159, 0.1); color: #00c49f"
+              >
+                <i class="fas fa-book"></i>
+              </div>
+              <div class="stat-details">
+                <h3>إجمالي الدورات</h3>
+                <div class="stat-value">85</div>
+                <div class="stat-change positive">
+                  <i class="fas fa-arrow-up"></i>
+                  <span>8% منذ الشهر الماضي</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="stat-card">
+              <div
+                class="stat-icon"
+                style="
+                  background-color: rgba(255, 187, 40, 0.1);
+                  color: #ffbb28;
+                "
+              >
+                <i class="fas fa-chalkboard-teacher"></i>
+              </div>
+              <div class="stat-details">
+                <h3>إجمالي المدربين</h3>
+                <div class="stat-value">42</div>
+                <div class="stat-change positive">
+                  <i class="fas fa-arrow-up"></i>
+                  <span>12% منذ الشهر الماضي</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="stat-card">
+              <div
+                class="stat-icon"
+                style="
+                  background-color: rgba(255, 128, 66, 0.1);
+                  color: #ff8042;
+                "
+              >
+                <i class="fas fa-money-bill-wave"></i>
+              </div>
+              <div class="stat-details">
+                <h3>إجمالي الإيرادات</h3>
+                <div class="stat-value">75,000 ر.س</div>
+                <div class="stat-change negative">
+                  <i class="fas fa-arrow-down"></i>
+                  <span>3% منذ الشهر الماضي</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Analytics Section -->
+        <section id="analytics-section">
+          <h1 class="page-title">التحليلات</h1>
+
+          <div class="analytics-section">
+            <div class="chart-container">
+              <div class="chart-header">
+                <h2>تحليل المستخدمين</h2>
+                <div class="chart-actions">
+                  <select>
+                    <option>آخر 6 أشهر</option>
+                    <option>آخر 3 أشهر</option>
+                    <option>آخر شهر</option>
+                  </select>
+                  <button class="refresh-btn">
+                    <i class="fas fa-sync-alt"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="chart-body">
+                <canvas id="userAnalyticsChart"></canvas>
+              </div>
+            </div>
+
+            <div class="chart-container">
+              <div class="chart-header">
+                <h2>تحليل الدورات</h2>
+                <div class="chart-actions">
+                  <select>
+                    <option>حسب التصنيف</option>
+                    <option>حسب المستوى</option>
+                    <option>حسب المدرب</option>
+                  </select>
+                  <button class="refresh-btn">
+                    <i class="fas fa-sync-alt"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="chart-body">
+                <canvas id="courseAnalyticsChart"></canvas>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Users Section -->
+        <section id="user-section" class="section">
+          <div class="section-header">
+            <h2>إدارة المستخدمين</h2>
+            <button id="addUserBtn" class="add-btn">
+              <i class="fas fa-plus"></i> إضافة مستخدم جديد
+            </button>
+          </div>
+
+          <div class="table-container">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>الاسم</th>
+                  <th>البريد الإلكتروني</th>
+                  <th>الدور</th>
+                  <th>الحالة</th>
+                  <th>الإجراءات</th>
+                </tr>
+              </thead>
+              <tbody id="usersTableBody">
+                <!-- User data will be populated here -->
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- Instructors Section -->
+        <section id="instructor-section" class="section">
+          <div class="section-header">
+            <h2>إدارة المدربين</h2>
+            <button id="inviteInstructorBtn" class="add-btn">
+              <i class="fas fa-envelope"></i> اضافه مدرب جديد
+            </button>
+          </div>
+
+          <div class="table-container">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>الاسم</th>
+                  <th>البريد الإلكتروني</th>
+                  <th>التخصص</th>
+                  <th>عدد الدورات</th>
+                  <th>الحالة</th>
+                  <th>الإجراءات</th>
+                </tr>
+              </thead>
+              <tbody id="instructorsTableBody">
+                <!-- Instructor data will be populated here -->
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- Courses Section -->
+        <section id="course-section" class="section">
+          <div class="section-header">
+            <h2>إدارة الدورات</h2>
+            <div class="filter-container">
+              <select id="courseStatusFilter">
+                <option value="all">جميع الدورات</option>
+                <option value="approved">الدورات المعتمدة</option>
+                <option value="pending">قيد المراجعة</option>
+                <option value="rejected">الدورات المرفوضة</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="table-container">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>عنوان الدورة</th>
+                  <th>المدرب</th>
+                  <th>المدة</th>
+                  <th>عدد الطلاب</th>
+                  <th>الحالة</th>
+                  <th>الإجراءات</th>
+                </tr>
+              </thead>
+              <tbody id="coursesTableBody">
+                <!-- Course data will be populated here -->
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- Settings Section -->
+        <section id="settings-section" class="section">
+          <h1 class="page-title">الإعدادات</h1>
+
+          <div class="form-group">
+            <label>اسم المنصة</label>
+            <input type="text" value="منصة مكني التعليمية" />
+          </div>
+
+          <div class="form-group">
+            <label>البريد الإلكتروني للدعم</label>
+            <input type="email" value="support@makkeny.com" />
+          </div>
+
+          <div class="form-group">
+            <label>رقم هاتف الدعم</label>
+            <input type="tel" value="+966 12 345 6789" />
+          </div>
+
+          <div class="form-group">
+            <label>شعار المنصة</label>
+            <input type="file" />
+          </div>
+
+          <div class="form-actions">
+            <button class="submit-btn">حفظ التغييرات</button>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <!-- Add User Modal -->
+    <div id="addUserModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>إضافة مستخدم جديد</h2>
+          <span class="close-modal">&times;</span>
+        </div>
+        <div class="modal-body">
+          <form id="addUserForm">
+            <div class="form-group">
+              <label for="userName">الاسم الكامل</label>
+              <input type="text" id="userName" required />
+            </div>
+            <div class="form-group">
+              <label for="userEmail">البريد الإلكتروني</label>
+              <input type="email" id="userEmail" required />
+            </div>
+            <div class="form-group">
+              <label for="userPassword">كلمة المرور</label>
+              <input type="password" id="userPassword" required />
+              <p class="help-text">
+                يجب أن تحتوي على 8 أحرف على الأقل، حرف كبير، حرف صغير، رقم ورمز
+                خاص.
+              </p>
+            </div>
+            <div class="form-group">
+              <label for="userRole">الدور</label>
+              <select id="userRole" required>
+                <option value="student">طالب</option>
+                <option value="instructor">مدرب</option>
+                <option value="admin">مشرف</option>
+              </select>
+            </div>
+            <div class="form-actions">
+              <button type="button" class="cancel-btn">إلغاء</button>
+              <button type="submit" class="submit-btn">إضافة</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Invite Instructor Modal -->
+    <div id="inviteInstructorModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>اضافه مدرب جديد</h2>
+          <span class="close-modal">&times;</span>
+        </div>
+        <div class="modal-body">
+          <form id="inviteInstructorForm">
+            <div class="form-group">
+              <label for="instructorEmail">البريد الإلكتروني</label>
+              <input type="email" id="instructorEmail" required />
+            </div>
+
+            <div class="form-group"></div>
+            <div class="form-actions">
+              <button type="button" class="cancel-btn">إلغاء</button>
+              <button type="submit" class="submit-btn">اضافه مدرب</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- View Course Modal -->
+    <div id="viewCourseModal" class="modal">
+      <div class="modal-content modal-lg">
+        <div class="modal-header">
+          <h2>تفاصيل الدورة</h2>
+          <span class="close-modal">&times;</span>
+        </div>
+        <div class="modal-body">
+          <div id="courseDetails">
+            <!-- Course details will be populated here -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="admin-dashboard.js"></script>
+  </body>
+</html>
